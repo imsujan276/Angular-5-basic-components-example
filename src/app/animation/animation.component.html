@@ -1,0 +1,26 @@
+<h2> Animation Example </h2>
+
+
+<b>1. Auto </b><br>
+  <div [@autoAnimate]="texts.length">
+    <p *ngFor="let text of texts">
+
+      	{{text}}
+
+    </p>
+  </div>
+
+
+<br><b>2. Toggle </b><br><br>
+  <ul>
+    <li *ngFor="let text of texts"
+        [@toggleState]="state"
+        (click)="toggleState()">
+
+      	{{text}}
+
+    </li>
+  </ul>
+
+
+

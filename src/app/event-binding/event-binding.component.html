@@ -1,0 +1,11 @@
+<h2> Event Binding Example </h2>
+<p>
+  <button type="submit" (click)="alertMe()"> Alert Me </button>
+</p>
+<p>
+	<button type="submit" (click)="changeButtonText()">{{ buttonText }}</button>
+</p>
+
+<p (click)="tryMe()">
+	Click me to Restore the button text
+</p>
